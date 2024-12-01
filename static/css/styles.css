@@ -12,6 +12,20 @@ body {
     text-align: center;
     padding: 20px;
 }
+.images-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.images-container img {
+    width: 100%; /* La imagen se adapta al 100% del contenedor */
+    height: auto; /* Mantiene la relación de aspecto */
+    object-fit: cover; /* Ajusta la imagen para cubrir el área sin distorsionarse */
+}
 
 h1 {
     color: #1e8449;
