@@ -128,6 +128,11 @@ input[type="number"], select {
     height: auto;
     border-radius: 10px;
 }
+.product-item h2 {
+    margin: 10px 0;
+    font-size: 1.5em;
+    color: #333;
+}
 
 .product-item p {
     text-align: center;
