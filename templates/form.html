@@ -34,14 +34,14 @@
             <label for="skin_tone">Color de piel:</label><br>
             <select id="skin_tone" name="skin_tone" required>
                 <option value="blanco">Blanco</option>
-                <option value="cafe">cafe</option>
                 <option value="moreno">Moreno</option>
+                <option value="oscura">Oscura</option>
             </select><br><br>
 
             <div class="paletas">
                 <img src="{{ url_for('static', filename='images/paleta_blanco.jpg') }}" alt="Blanco">
-                <img src="{{ url_for('static', filename='images/paleta_cafe.jpg') }}" alt="cafe">
-                <img src="{{ url_for('static', filename='images/paleta_moreno.jpg') }}" alt="Moreno">
+                <img src="{{ url_for('static', filename='images/paleta_cafe.jpg') }}" alt="Moreno">
+                <img src="{{ url_for('static', filename='images/paleta_moreno.jpg') }}" alt="Oscura">
             </div>
             <input type="submit" value="Enviar">
         </form>
