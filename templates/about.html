@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nosotros</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="/">Inicio</a></li>
+            <li><a href="/form">Formulario</a></li>
+            <li><a href="/about">Sobre Nosotros</a></li>
+            <li><a href="/products">Productos</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>Sobre Nosotros</h1>
+        <p>En nuestra empresa, nos enfocamos en ofrecer productos de cuidado de la piel naturales y sostenibles, combinando eficacia y respeto por el medio ambiente. <p>
+        <p> Nuestro equipo de expertos trabaja con pasión para crear productos innovadores, como nuestro suero desmaquillante, que no solo embellece, sino que también promueve el bienestar planetario. Buscamos liderar el mercado, expandir nuestra presencia global y asegurar que cada cliente disfrute de una experiencia de belleza saludable y consciente.</p>
+        <div class="about-sections">
+            <!-- Sección del equipo de trabajo -->
+            <div class="section">
+                <img src="{{ url_for('static', filename='images/equipo_trabajo.jpg') }}" alt="Equipo de Trabajo">
+                <h2>Equipo de Trabajo</h2>
+                <p>Un grupo de expertos dedicados a revolucionar el cuidado de la piel de forma sostenible.</p>
+            </div>
+            <!-- Sección de misión o propósito -->
+            <div class="section">
+                <img src="{{ url_for('static', filename='images/mision.jpg') }}" alt="Misión">
+                <h2>Nuestra Misión</h2>
+                <p>Crear productos que nutran y cuiden la piel mientras protegemos el medio ambiente.</p>
+            </div>
+            <!-- Sección de objetivos de mercado -->
+            <div class="section">
+                <img src="{{ url_for('static', filename='images/objetivos_mercado.jpg') }}" alt="Objetivos de Mercado">
+                <h2>Objetivos de Mercado</h2>
+                <p>Ser líderes en el mercado de productos naturales personalizados para el cuidado de la piel.</p>
+            </div>
+            <!-- Sección de ubicación y alcance -->
+            <div class="section">
+                <img src="{{ url_for('static', filename='images/ubicacion.jpg') }}" alt="Ubicación y Alcance">
+                <h2>Ubicación y Alcance</h2>
+                <p>Desde nuestra base, expandimos nuestro alcance para llegar a toda Colombia.</p>
+            </div>
+        </div>
+    </div>
+    <div class="social-media">
+        <h3>Síguenos en nuestras redes sociales</h3>
+        <a href="https://www.instagram.com/serum_ka.an?igsh=d3dvMmc4aGF5cTJ0" target="_blank">
+            <img src="{{ url_for('static', filename='images/instagram-icon.png') }}" alt="Instagram" class="icon">
+        </a>
+        <a href="https://www.facebook.com" target="_blank">
+            <img src="{{ url_for('static', filename='images/facebook-icon.png') }}" alt="Facebook" class="icon">
+        </a>
+        <a href="https://wa.me/573213411426" target="_blank">
+            <img src="{{ url_for('static', filename='images/youtube-icon.png') }}" alt="YouTube" class="icon">
+        </a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,152 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e8f5e9;
+    color: #2c3e50;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    color: #1e8449;
+}
+
+.content p {
+    font-size: 1.2em;
+    margin: 20px 0;
+}
+
+.button-container {
+    margin-top: 30px;
+}
+
+a.btn {
+    display: inline-block;
+    background-color: #27ae60;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 5px;
+}
+
+a.btn:hover {
+    background-color: #2ecc71;
+}
+
+input[type="number"], select {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.paletas img {
+    width: 150px;
+    margin: 20px;
+}
+.social-media {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.social-media h3 {
+    font-size: 18px;
+    color: #333;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+    transition: transform 0.2s;
+}
+
+.icon:hover {
+    transform: scale(1.1);
+}
+.navbar {
+    background-color: #2a9d8f;
+    padding: 10px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.navbar li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #e9c46a;
+}
+
+.products-list {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 25px;
+}
+
+.product-item img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.product-item p {
+    text-align: center;
+    margin-top: 9px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.about-sections {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.section {
+    text-align: center;
+    max-width: 300px;
+}
+
+.section img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.section h2 {
+    margin: 10px 0;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.section p {
+    font-size: 1em;
+    color: #555;
+}

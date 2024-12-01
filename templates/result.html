@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultados</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="/">Inicio</a></li>
+            <li><a href="/form">Formulario</a></li>
+            <li><a href="/about">Sobre Nosotros</a></li>
+            <li><a href="/products">Productos</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>¡Descubre el Serum Perfecto para Ti!</h1>
+        <p>Hemos seleccionado el serum ideal basado en tus necesidades únicas. Este es más que un producto; es un paso hacia el cuidado y la nutrición profunda de tu piel. ¡Experimenta la diferencia hoy!</p>
+        
+        {% if skin_tone == 'blanco' %}
+            <img src="{{ url_for('static', filename='images/PRODUCTO_BLANCO.jpg') }}" alt="Blanco">
+            <h2>Serum Esencial para Pieles Claras</h2>
+            <p>Este serum de alta calidad ha sido formulado específicamente para pieles claras, proporcionando una hidratación profunda y un cuidado delicado. Enriquecido con vitamina C natural, este serum ayuda a proteger contra los radicales libres y revitaliza tu piel para un aspecto radiante y saludable. ¡Dale a tu piel el tratamiento que merece!</p>
+            <div class="button-container">
+                <a href="https://wa.me/573213411426?text=Hola,%20quiero%20continuar%20con%20la%20compra" target="_blank" class="btn">Click aquí para continuar con la compra</a>
+            </div>
+        {% elif skin_tone == 'trigueño' %}
+            <img src="{{ url_for('static', filename='images/PRODUCTO_TRIGUEÑO.jpg') }}" alt="Trigueño">
+            <h2>Serum Nutritivo para Pieles Trigueñas</h2>
+            <p>Formulado para equilibrar e iluminar tu tono de piel, este serum es ideal para pieles trigueñas. Contiene ingredientes naturales y sostenibles que nutren tu piel profundamente, mejorando la elasticidad y proporcionando un brillo natural. ¡Redescubre una piel luminosa y llena de vida con nuestro serum exclusivo!</p>
+            <div class="button-container">
+                <a href="https://wa.me/573213411426?text=Hola,%20quiero%20continuar%20con%20la%20compra" target="_blank" class="btn">Click aquí para continuar con la compra</a>
+            </div>
+        {% elif skin_tone == 'moreno' %}
+            <img src="{{ url_for('static', filename='images/PRODUCTO_MORENO.jpg') }}" alt="Moreno">
+            <h2>Serum Intensivo para Pieles Morenas</h2>
+            <p>Diseñado para pieles morenas, este serum nutre en profundidad y realza el brillo natural de tu piel. Hecho con extractos de vitamina C y antioxidantes, protege y regenera, dándote una piel suave y radiante. ¡Haz que tu piel luzca siempre en su mejor versión!</p>
+            <div class="button-container">
+                <a href="https://wa.me/573213411426?text=Hola,%20quiero%20continuar%20con%20la%20compra" target="_blank" class="btn">Click aquí para continuar con la compra</a>
+            </div>
+        {% endif %}
+    </div>
+
+    <!-- Sección de Redes Sociales -->
+    <div class="social-media">
+        <h3>Síguenos en nuestras redes sociales</h3>
+        <a href="https://www.instagram.com/serum_ka.an?igsh=d3dvMmc4aGF5cTJ0" target="_blank">
+            <img src="{{ url_for('static', filename='images/instagram-icon.png') }}" alt="Instagram" class="icon">
+        </a>
+        <a href="https://www.facebook.com" target="_blank">
+            <img src="{{ url_for('static', filename='images/facebook-icon.png') }}" alt="Facebook" class="icon">
+        </a>
+        <a href="https://wa.me/573213411426" target="_blank">
+            <img src="{{ url_for('static', filename='images/youtube-icon.png') }}" alt="YouTube" class="icon">
+        </a>
+    </div>
+</body>
+</html>
+

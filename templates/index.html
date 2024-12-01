@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenidos al Mejor Serum Desmaquillador</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="/">Inicio</a></li>
+            <li><a href="/form">Formulario</a></li>
+
+            <li><a href="/about">Sobre Nosotros</a></li>
+            <li><a href="/products">Productos</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>BIENVENIDOS AL MEJOR SERUM DESMAQUILLADOR</h1>
+        <p>Descubre la revolución en el cuidado de tu piel con nuestro exclusivo suero desmaquillante personalizado. Diseñado pensando en ti, este producto no solo elimina el maquillaje, sino que también hidrata y nutre profundamente, restaurando el equilibrio natural de tu piel.</p>
+        <p>Formulado con ingredientes sostenibles y enriquecido con vitaminas y extractos botánicos, es más que un simple suero: es un compromiso con tu belleza y el medio ambiente. Vive una experiencia única, saludable y ecoamigable que realza tu piel mientras cuidas del planeta. ¡Hazlo tuyo hoy mismo!</p>
+        <div class="images-container">
+            <img src="{{ url_for('static', filename='images/imagen1.jpg') }}" alt="Imagen destacada">
+        </div>
+        <div class="button-container">
+            <a href="/form" class="btn">Haz clic aquí para continuar con esta experiencia</a>
+        </div>
+    </div>
+    <div class="social-media">
+        <h3>Síguenos en nuestras redes sociales</h3>
+        <a href="https://www.instagram.com/serum_ka.an?igsh=d3dvMmc4aGF5cTJ0" target="_blank">
+            <img src="{{ url_for('static', filename='images/instagram-icon.png') }}" alt="Instagram" class="icon">
+        </a>
+        <a href="https://www.facebook.com" target="_blank">
+            <img src="{{ url_for('static', filename='images/facebook-icon.png') }}" alt="Facebook" class="icon">
+        </a>
+        <a href="https://wa.me/573213411426" target="_blank">
+            <img src="{{ url_for('static', filename='images/youtube-icon.png') }}" alt="YouTube" class="icon">
+        </a>
+    </div>
+</body>
+</html>
+
+
+

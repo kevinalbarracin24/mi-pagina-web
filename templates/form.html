@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Información Básica</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="/">Inicio</a></li>
+            <li><a href="/form">Formulario</a></li>
+         
+            <li><a href="/about">Sobre Nosotros</a></li>
+            <li><a href="/products">Productos</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>Información Básica</h1>
+        <form action="/form" method="POST">
+            <label for="age">Edad:</label><br>
+            <input type="number" id="age" name="age" required><br><br>
+
+            <label for="height">Estatura (cm):</label><br>
+            <input type="number" id="height" name="height" required><br><br>
+
+            <label for="gender">Sexo:</label><br>
+            <select id="gender" name="gender">
+                <option value="femenino">Femenino</option>
+                <option value="masculino">Masculino</option>
+            </select><br><br>
+
+            <label for="skin_tone">Color de piel:</label><br>
+            <select id="skin_tone" name="skin_tone" required>
+                <option value="blanco">Blanco</option>
+                <option value="trigueño">Trigueño</option>
+                <option value="moreno">Moreno</option>
+            </select><br><br>
+
+            <div class="paletas">
+                <img src="{{ url_for('static', filename='images/paleta_blanco.jpg') }}" alt="Blanco">
+                <img src="{{ url_for('static', filename='images/paleta_trigueño.jpg') }}" alt="Trigueño">
+                <img src="{{ url_for('static', filename='images/paleta_moreno.jpg') }}" alt="Moreno">
+            </div>
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+    <div class="social-media">
+        <h3>Síguenos en nuestras redes sociales</h3>
+        <a href="https://www.instagram.com/serum_ka.an?igsh=d3dvMmc4aGF5cTJ0" target="_blank">
+            <img src="{{ url_for('static', filename='images/instagram-icon.png') }}" alt="Instagram" class="icon">
+        </a>
+        <a href="https://www.facebook.com" target="_blank">
+            <img src="{{ url_for('static', filename='images/facebook-icon.png') }}" alt="Facebook" class="icon">
+        </a>
+        <a href="https://wa.me/573213411426" target="_blank">
+            <img src="{{ url_for('static', filename='images/youtube-icon.png') }}" alt="YouTube" class="icon">
+        </a>
+    </div>
+</body>
+</html>
